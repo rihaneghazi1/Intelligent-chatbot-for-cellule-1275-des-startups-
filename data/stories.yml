@@ -2,29 +2,383 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: greeting path
   steps:
   - intent: greet
   - action: utter_greet
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: mood great path
+  steps:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
+- story: mood unhappy path with followup
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
 
-- story: sad path 2
+- story: mood unhappy path without followup
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: startup info path
+  steps:
+  - intent: ask_what_is_startup
+  - action: utter_ask_what_is_startup
+
+- story: diploma info path
+  steps:
+  - intent: what_type_of_diploma
+  - action: utter_what_type_of_diploma
+
+- story: training info path
+  steps:
+  - intent: recieve_training
+  - action: utter_recieve_training
+
+- story: application eligibility path
+  steps:
+  - intent: can_i_apply
+  - action: utter_can_i_apply
+
+- story: accepted ideas path
+  steps:
+  - intent: what_ideas_are_accepted
+  - action: utter_what_ideas_are_accepted
+
+- story: team formation path
+  steps:
+  - intent: team_formation
+  - action: utter_team_formation
+
+- story: registration process path
+  steps:
+  - intent: registration_process
+  - action: utter_registration_process
+
+- story: support resources path
+  steps:
+  - intent: support_resources
+  - action: utter_support_resources
+
+- story: business planning path
+  steps:
+  - intent: business_planning
+  - action: utter_business_planning
+
+- story: evaluation path
+  steps:
+  - intent: evaluation
+  - action: utter_evaluation
+
+- story: outcomes and benefits path
+  steps:
+  - intent: outcomes_benefits
+  - action: utter_outcomes_benefits
+
+- story: studies integration path
+  steps:
+  - intent: integration_with_studies
+  - action: utter_integration_with_studies
+
+- story: who can apply path
+  steps:
+  - intent: who_can_apply
+  - action: utter_who_can_apply
+
+- story: finding cofounders path
+  steps:
+  - intent: find_cofounders
+  - action: utter_find_cofounders
+
+- story: partner choice path
+  steps:
+  - intent: partner_choice
+  - action: utter_partner_choice
+
+- story: conflicts path
+  steps:
+  - intent: conflicts
+  - action: utter_conflicts
+
+- story: entrepreneur mistakes path
+  steps:
+  - intent: entrepreneur_mistakes
+  - action: utter_entrepreneur_mistakes
+
+- story: team motivation path
+  steps:
+  - intent: team_motivation
+  - action: utter_team_motivation
+
+- story: team size advice path
+  steps:
+  - intent: team_size_advice
+  - action: utter_team_size_advice
+
+- story: best tip path
+  steps:
+  - intent: best_tip
+  - action: utter_best_tip
+
+- story: underrated growth hack path
+  steps:
+  - intent: underrated_growth_hack
+  - action: utter_underrated_growth_hack
+
+- story: skipping classes path
+  steps:
+  - intent: skeep_classes
+  - action: utter_skeep_classes
+
+- story: validate vs perfect path
+  steps:
+  - intent: validate_vs_perfectit
+  - action: utter_validate_vs_perfectit
+
+- story: eligibility criteria path
+  steps:
+  - intent: ask_eligibility_criteria
+  - action: utter_ask_eligibility_criteria
+
+- story: application process path
+  steps:
+  - intent: ask_application_process
+  - action: utter_ask_application_process
+
+- story: deadlines path
+  steps:
+  - intent: ask_deadlines
+  - action: utter_ask_deadlines
+
+- story: funding programs path
+  steps:
+  - intent: ask_funding_programs
+  - action: utter_ask_funding_programs
+
+- story: about CNAC path
+  steps:
+  - intent: what_is_cnac
+  - action: utter_what_is_cnac
+
+- story: join CNAC path
+  steps:
+  - intent: how_to_join_cnac
+  - action: utter_how_to_join_cnac
+
+- story: about ANSEJ path
+  steps:
+  - intent: what_is_ansej
+  - action: utter_what_is_ansej
+
+- story: join ANSEJ path
+  steps:
+  - intent: how_to_join_ansej
+  - action: utter_how_to_join_ansej
+
+- story: CNAC eligibility path
+  steps:
+  - intent: who_can_apply_cnac
+  - action: utter_who_can_apply_cnac
+
+- story: ANSEJ eligibility path
+  steps:
+  - intent: who_can_apply_ansej
+  - action: utter_who_can_apply_ansej
+
+- story: finding funding path
+  steps:
+  - intent: how_to_find_funding_algeria
+  - action: utter_how_to_find_funding_algeria
+
+- story: student funding path
+  steps:
+  - intent: how_to_fund_project_as_student
+  - action: utter_how_to_fund_project_as_student
+
+- story: funding platforms path
+  steps:
+  - intent: platforms_for_funding_opportunities
+  - action: utter_platforms_for_funding_opportunities
+
+- story: no capital funding path
+  steps:
+  - intent: can_i_get_funding_with_no_capital
+  - action: utter_can_i_get_funding_with_no_capital
+
+- story: funding examples path
+  steps:
+  - intent: real_life_funding_examples_algeria
+  - action: utter_real_life_funding_examples_algeria
+
+- story: application mistakes path
+  steps:
+  - intent: mistakes_to_avoid_when_applying
+  - action: utter_mistakes_to_avoid_when_applying
+
+- story: startup creation process
+  steps:
+  - intent: ask_steps_to_create_startup
+  - action: utter_ask_steps_to_create_startup
+
+- story: startup registration location
+  steps:
+  - intent: ask_where_to_register
+  - action: utter_ask_where_to_register
+
+- story: get commercial registration
+  steps:
+  - intent: ask_get_commercial_registration
+  - action: utter_ask_get_commercial_registration
+
+- story: required documents
+  steps:
+  - intent: ask_required_documents
+  - action: utter_ask_required_documents
+
+- story: legal structure difference
+  steps:
+  - intent: ask_legal_structure_difference
+  - action: utter_ask_legal_structure_difference
+
+- story: need to publish statutes
+  steps:
+  - intent: ask_need_to_publish_statutes
+  - action: utter_ask_need_to_publish_statutes
+
+- story: content of statutes
+  steps:
+  - intent: ask_content_of_statutes
+  - action: utter_ask_content_of_statutes
+
+- story: tax obligations
+  steps:
+  - intent: ask_tax_obligations
+  - action: utter_ask_tax_obligations
+
+- story: get nif
+  steps:
+  - intent: ask_get_nif
+  - action: utter_ask_get_nif
+
+- story: register with tax authority
+  steps:
+  - intent: ask_register_with_tax_authority
+  - action: utter_ask_register_with_tax_authority
+
+- story: use home as headquarters
+  steps:
+  - intent: ask_use_home_as_headquarters
+  - action: utter_ask_use_home_as_headquarters
+
+- story: domiciliation options
+  steps:
+  - intent: ask_domiciliation_options
+  - action: utter_ask_domiciliation_options
+
+- story: incubator domiciliation
+  steps:
+  - intent: ask_incubator_domiciliation
+  - action: utter_ask_incubator_domiciliation
+
+- story: solo startup
+  steps:
+  - intent: ask_solo_startup
+  - action: utter_ask_solo_startup
+
+- story: partners roles
+  steps:
+  - intent: ask_partners_roles
+  - action: utter_ask_partners_roles
+
+- story: required capital
+  steps:
+  - intent: ask_required_capital
+  - action: utter_ask_required_capital
+
+- story: obtain startup label
+  steps:
+  - intent: ask_obtain_startup_label
+  - action: utter_ask_obtain_startup_label
+
+- story: startup label advantages
+  steps:
+  - intent: ask_startup_label_advantages
+  - action: utter_ask_startup_label_advantages
+
+- story: funding and support
+  steps:
+  - intent: ask_funding_and_support
+  - action: utter_ask_funding_and_support
+
+- story: find funding
+  steps:
+  - intent: ask_find_funding
+  - action: utter_ask_find_funding
+
+- story: official guide
+  steps:
+  - intent: ask_official_guide
+  - action: utter_ask_official_guide
+
+- story: online platform
+  steps:
+  - intent: ask_online_platform
+  - action: utter_ask_online_platform
+
+- story: duration to start
+  steps:
+  - intent: ask_duration_to_start
+  - action: utter_ask_duration_to_start
+
+- story: startup mistakes
+  steps:
+  - intent: ask_startup_mistakes
+  - action: utter_ask_startup_mistakes
+
+- story: startup costs
+  steps:
+  - intent: ask_startup_costs
+  - action: utter_ask_startup_costs
+
+- story: legal procedure
+  steps:
+  - intent: ask_legal_procedure
+  - action: utter_ask_legal_procedure
+
+- story: documentation requirements
+  steps:
+  - intent: ask_documents
+  - action: utter_ask_documents
+
+- story: legal status
+  steps:
+  - intent: ask_legal_status
+  - action: utter_ask_legal_status
+
+- story: tax registration
+  steps:
+  - intent: ask_tax
+  - action: utter_ask_tax
+
+- story: home office
+  steps:
+  - intent: ask_home_office_of_startup
+  - action: utter_ask_home_office_of_startup
+
+- story: startup alone
+  steps:
+  - intent: ask_startup_alone
+  - action: utter_ask_startup_alone

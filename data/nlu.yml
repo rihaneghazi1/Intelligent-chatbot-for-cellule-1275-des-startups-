@@ -1,6 +1,7 @@
 version: "3.1"
 
 nlu:
+
 - intent: greet
   examples: |
     - hey
@@ -16,6 +17,13 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - Salam alaikum
+    - Bonjour 
+    - Salut 
+    - Coucou !
+    - السلام عليكم 
+    - مرحبا
+
 
 - intent: goodbye
   examples: |
@@ -29,6 +37,8 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - à bientôt
+    - au revoir
 
 - intent: affirm
   examples: |
@@ -38,6 +48,11 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - oui
+    - exactement
+    - tout à fait
+    - c'est correct
+    - affirmatif
 
 - intent: deny
   examples: |
@@ -48,6 +63,11 @@ nlu:
     - don't like that
     - no way
     - not really
+    - non
+    - pas vraiment
+    - pas du tout
+    - je ne pense pas
+    - jamais
 
 - intent: mood_great
   examples: |
@@ -65,6 +85,11 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - je me sens bien, merci!
+    - super bien
+    - ça va très bien
+    - excellente journée
+    - formidable 
 
 - intent: mood_unhappy
   examples: |
@@ -82,6 +107,291 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - je suis trist(e)
+    - pas bien
+    - je me sens pas alaise
+    - mauvaise journée
+    - déçu
+    - ça ne va pas
+
+- intent: ask_what_is_startup
+  examples: |
+    - What is a startup?
+    - describe a startup?
+    - what do i do in a startup?
+    - give me the definition of a startup?
+    - Can you tell me about startups?
+    - Define startup
+    - What does startup mean?
+    - I want to know what a startup is
+    - Explain what startups are
+    - What's a startup company?
+    - What makes a company a startup?
+    - Could you explain startups to me?
+    - What exactly is a startup?
+    - c quoi une startup?
+    - ca veut dire quoi une startup?
+    - donnez moi la definition d'une startup
+    - que ce qu'une startup?
+
+- intent: who_can_apply
+  examples: |
+    - Who can apply for this startup program in Algeria?
+    - Which students are eligible to make startups?
+    - Can students from any university join?
+    - Is this program open to all specialties?
+    - Do I need to be in a specific speciality to apply?
+    - What are the eligibility criteria for students?
+    - Can engineering students apply?
+    - Are medical students allowed to participate?
+    - Which degrees are accepted for the startup program?
+    - Am I eligible if I'm studying economics?
+    - Can any university student create a startup?
+    - What type of students can join the program?
+    - Can i apply to startup programs?
+    - How can i know if my idea is accepted in the startup program?
+    - can i make a startup?
+    - est ce que je peux lancer une startup?
+    - comment peux- je savoir si mon idee est accepte comme une startup?
+    - est ce que je peux inscrire dans le programme dea startup?
+    - quel sont les etudiants qui peuvent lancer une startup?
+    - est ce que j'ai besoin d'etre un etudiant d'une specialite precise?
+    - est ce que le programme des startup est ouvert pour toutes les specialitees?
+    - peuvent-ils les ingenieurs inscrire?
+    - peuvent-ils les etudiants de medecine inscrire?
+    -  est ce que je peux creer une startup?
+
+- intent: what_type_of_diploma
+  examples: |
+    - What diploma will I get?
+    - Do I receive a certificate for my startup?
+    - Will my startup count as my PFE?
+    - Can I graduate with my startup project?
+    - What qualifications will I earn?
+    - Is there a special certificate for startup creators?
+    - Do I get recognition for my startup?
+    - Will my degree be affected if I make a startup?
+    - What happens to my university degree if I create a startup?
+    - Can my startup project replace my final thesis?
+    - Will I get an Economic Enterprise Project Certificate?
+    - Does making a startup affect my graduation?
+    - If i open a startup what diploma do i get?
+    - What kind of diplom do the university give incase you present a startup?
+    - mon startup peut-elle devenir mon pfe?
+    - vais-je obtenir une reconnaissance pour ma startup?
+    - que ce qu'arrive a mon diplome universitaire si je cree une startup?
+    - quel diplome vais-je obtenir?
+
+
+- intent: recieve_training
+  examples: |
+    - Will I receive any training?
+    - Is there training for startup founders?
+    - Do you offer courses for startups?
+    - What kind of training is provided?
+    - Can I learn about e-marketing?
+    - Is funding training available?
+    - Do you teach management skills?
+    - Are there workshops for startup creators?
+    - What will I learn if I join?
+    - Is there any support for learning business skills?
+    - Do you provide educational resources?
+    - What training courses are offered to participants?
+    - Do i recieve some kind of training?
+    - What if i don't have an idea of what i do?
+    - How can i recieve help?
+    - est ce que le programme des startup offre des formations?
+    - offrez vous de soutien?
+    - quels types de formation sont offertes aux participants?
+    - vais-je recevoir une forme de formation?
+    - que faire si je n'ai pas d'idee de ce que je dois faire?
+    - comment puis-je obtenir de l'aide?
+
+- intent: can_i_apply
+  examples: |
+    - Can I apply?
+    - Am I eligible to apply?
+    - Can I submit my idea?
+    - Is it possible for me to join?
+    - Do I qualify for the program?
+    - Can someone like me apply?
+    - Is registration open for me?
+    - Would I be accepted?
+    - Can I register my startup idea?
+    - Is this program something I can join?
+    - May I submit an application?
+    - Is it ok if I try to apply?
+    - puis-je postuler?
+    - est-ce que quelqu'un comme moi peut postuler?
+    - puis je enregister mon idee de startup?
+    - les inscriptions sont-elles ouvertes pour tous le monde?
+    - est ce que je reponds aux criteres du programme?
+    - est ce que je peux inscrire au programme?
+    - can i apply for the program?
+
+- intent: what_ideas_are_accepted
+  examples: |
+    - What types of ideas are accepted in Algeria?
+    - Which startup ideas qualify?
+    - Is my idea suitable for this program?
+    - What kind of projects can be registered?
+    - Are there any restrictions on ideas?
+    - Do you accept all types of startup concepts?
+    - What makes an idea acceptable?
+    - Are tech ideas preferred?
+    - Can my startup idea be considered?
+    - What are the criteria for accepting ideas?
+    - Do you have specific categories for startups?
+    - Is there a specific theme for startup ideas?
+    - What do Algerian universities accept as ideas?
+    - how can i know if my idea is accepted?
+    - quels type d'idees sont acceptes en Algerie?
+    - quelles idees de startups sont admissibles?
+    - mon idees convient-elle a ce programme?
+    - Y a-t-il des restrictions concernant les idees?
+    - acceptez-vous tous types de concepts de startups?
+    - qu'est ce qui rend une idee acceptable?
+    - mon idee de startup peut-elle etre consideree?
+    - est ce que mon idee peut etre accepte?
+
+- intent: team_formation
+  examples: |
+    - How many students can be in a PFE startup team?
+    - Can I include students from different specialties?
+    - What's the minimum number of team members?
+    - What's the maximum team size?
+    - Can I work with students from other departments?
+    - Do all team members need to be from the same specialty?
+    - Team composition rules
+    - Who can be in my startup team?
+    - How do i form my team?
+    - Can i form a team with my friends?
+    - is it necessary that all team members for the startup are from the same speciality or year?
+    - how many students can make the startup with me?
+    - combien d'etudiants peuvent former une equipe de startup pfe?
+    - puis je inclure des etudiants de differents specialites?
+    - quel est le nombre minimum de membres dans une equipe?
+    - puis je travailler avec des etudiants d'autre departements?
+    - Regle de composition de l'equipe
+    - comment former une equipe?
+    - puis je former une equipe avec mes amis?
+    - combien d'etudiant peuvent creer la startup avec moi?
+
+
+- intent: registration_process
+  examples: |
+    - How do I register my project as a PFE Startup?
+    - When is the registration period?
+    - Do I need to register with an incubator?
+    - What's the process to register my startup?
+    - How to formalize my startup project?
+    - Registration deadlines for PFE Startups
+    - What forms do I need to complete?
+    - Do I need to choose an incubator when registering?
+    - What is the full registration process?
+    - How can someone register a startup?
+    - comment enregister mon projet en tant que startup PFE?
+    - quelle est la periode d'inscription?
+    - quel est le processus pour enregistrer un startup?
+    - ai je besoin de choisir un incubateur lors de l'inscription?
+    - comment quelqu'un peut il enregister une startup?
+
+- intent: support_resources
+  examples: |
+    - Which incubators are available?
+    - What resources does the university provide?
+    - How will incubators help my startup?
+    - Is there training for market research?
+    - What support will I receive for my startup?
+    - Where are the incubators located?
+    - What is ICOSNET?
+    - What is TECHINNOV?
+    - What is GTA?
+    - Will there be marketing training?
+    - quels incubateurs sont disponibles?
+    - ou sont situes les incubateurs?
+    - quelles ressources l'universite fournit-elle?
+    - comment les incubateurs vont-ils aider ma startup?
+    - y aura t il une formation en marketing?
+    - qu'est ce qu'ICOSNET?
+    - qu'est ce que TECHINNOV?
+    - qu'est ce que GTA?
+
+- intent: business_planning
+  examples: |
+    - What is a BMC?
+    - c quoi un BMC?
+    - How do I create a Business Model Canvas?
+    - Who helps with the business model?
+    - What should be in my business plan?
+    - Business Model Canvas explanation
+    - What's included in the BMC?
+    - How detailed should my BMC be?
+    - comment creer un business model in canvas?
+    - qu'est ce qui est inclus dans le BMC?
+    - explication du business model canvas?
+
+- intent: evaluation
+  examples: |
+    - How are PFE Startups evaluated?
+    - Who will be in the jury?
+    - Will the startup grade be on my transcript?
+    - How does the ranking system work?
+    - What's the evaluation process?
+    - Is the startup grade part of my academic record?
+    - How is the final presentation structured?
+    - What's the composition of the jury?
+    - Who determines my marks?
+    - if i present my startup as a PFE how will it be noted?
+    - How is my startup going to be noted?
+    - comment les startups PFE sont elles evaluees?
+    - qui composera le jury?
+    - comment fonctionne le systeme de classement?
+    - la note de la startup figurera t elle sur mon releve de note?
+    - quel est le processus d'evaluation?
+    - la note de la startup fait elle partie de mon dossier academique?
+    - quelle est la composition du jury?
+    - qui determine mes notes?
+    - si je presente ma startup en tant que PFE comment sare t elle note?
+    - who are the juries?
+    - qui sont les jures?
+
+- intent: outcomes_benefits
+  examples: |
+    - What certification will I receive?
+    - Will I get a startup diploma?
+    - Do incubators help after graduation?
+    - What rewards might be available?
+    - What happens after the final presentation?
+    - Can I get the university-project economic certificate?
+    - Will we get any special recognition?
+    - How long does incubator support last?
+    - Can i continue in developping my startup?
+    - quelle certificat vais je recevoir?
+    - vais je obtenir un diplome de startup?
+    - les incubateurs aident ils apres l'obtention du diplome?
+    - que se passe t il apres la presentation finale?
+    - recevrai je une reconnaissance speciale?
+    - puis je continuer a developper ma startup?
+
+
+- intent: integration_with_studies
+  examples: |
+    - What's the goal of PFE Startups?
+    - Does the university want to create economic institutions?
+    - How does entrepreneurship fit with my studies?
+    - What's the purpose of startup projects?
+    - Is job creation a goal?
+    - Does the university promote innovation?
+    - What's decision 1275 about?
+    - How are startups integrated into education?
+    - How does this help with my studies?
+    - Does the startup program help me in anyway?
+    - quel est l'objectif des startups PFE?
+    - quel est le but des projets des startup?
+    - est ce que le programme de startup m'aide d'une maniere ou d'une autre?
+    - comment cela m'aide t il dans mes etudes?
+
 
 - intent: bot_challenge
   examples: |
@@ -89,3 +399,851 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - vous etes un Bot?
+    - etes vous un bot?
+    -suis je entrain de parler a un human?
+
+
+
+- intent: find_cofounders
+  examples: |
+    - How do I find the right co-founders in university?
+    - Where can I meet potential co-founders as a student?
+    - Tips for finding co-founders in university
+    - How to pick a startup partner in university?
+    - How do I build a startup team in university?
+    - How do student entrepreneurs usually find their co-founders?
+    - Where can I network with other entrepreneurial students to find co-founders?
+    - How do I approach students about being co-founders?
+    - Any advice for meeting co-founders on campus?
+    - I have got a startup idea—how do I find someone to build it with me at uni?
+    - Comment trouver les bons cofondateurs à l'université ?
+    - Comment puis-je trouver un bon cofondateur à la fac ?
+    - Où chercher des cofondateurs quand on est étudiant ?
+    - J'aimerais trouver un cofondateur à l'université, des idées ?
+    - Comment identifier les bons profils pour co-fonder une startup à la fac ?
+    - Est-ce que je peux trouver un cofondateur dans mon université ?
+    - Avez-vous des conseils pour trouver un cofondateur pendant mes études ?
+    - Je veux lancer un projet, comment trouver quelqu'un avec qui m'associer à l'université ?
+    - C'est quoi la meilleure manière de rencontrer un cofondateur à l'université ?
+    - Comment repérer des étudiants intéressés par l'entrepreneuriat pour créer une startup ensemble ?
+   
+
+- intent: partner_choice
+  examples: | 
+    - Should I partner with friends or strangers with skills?
+    - Is it better to start a startup with a friend or a skilled stranger?
+    - Is working with friends a good idea for a startup?
+    - Should I choose a co-founder based of friendship or skillset? 
+    - Is it smart to start a startup with a friend?
+    - Should I avoid founding a startup with friends?
+    - Is it risky to partner with a friend on a startup?
+    - what's more important in a co-founder trust or skills?
+    - Can I trust strangers more than friends in a startup?
+    - Est-ce mieux de m'associer avec des amis ou avec des inconnus compétents ?
+    - Vaut-il mieux choisir des amis ou des personnes qualifiées comme cofondateurs ?
+    - Dois-je lancer mon projet avec des amis ou avec des inconnus qui ont les bonnes compétences ?
+    - Est-il préférable de créer une startup avec un ami ou quelqu'un que je ne connais pas mais qui a de l’expérience ?
+    - Que recommandez-vous  s'associer avec des amis ou avec des experts qu'on ne connaît pas ?
+    - Mieux vaut un ami de confiance ou un inconnu talentueux comme cofondateur ?
+    - Est-ce risqué de m'associer avec des amis plutôt que des personnes qualifiées ?
+    - Je me demande si je dois choisir un ami ou un inconnu compétent comme partenaire ?
+    - S'associer avec des amis, est-ce une bonne idée pour créer une entreprise ?
+    - Faut-il privilégier les compétences ou la relation personnelle quand on choisit un cofondateur ?
+
+- intent: conflicts
+  examples: | 
+    - How do I manage conflicts in my startup team?
+    - What's the best way to handle disagreements with my co-founder?
+    - How can I resolve conflicts in my startup team?
+    - What should I do if there's tension in my startup team?
+    - How do I deal with team conflict in an early-stage startup?
+    - How can I prevent arguments from hurting my startup?
+    - What are good strategies for managing conflict in a startup?
+    - How do I keep my startup team aligned during disagreements?
+    - How should I approach conflicts with my startup partners?
+    - How do I stay professional when things get tense in my startup?
+    - Comment gérer les conflits dans mon équipe de startup ?
+    - Que faire en cas de conflit entre les membres de mon équipe ?
+    - Comment résoudre les tensions dans une équipe de startup ?
+    - J'ai des conflits dans mon équipe, comment les gérer ?
+    - Des conseils pour gérer les désaccords dans une startup ?
+    - Comment apaiser les conflits entre cofondateurs ?
+    - Quelle est la meilleure façon de gérer un conflit dans mon équipe ?
+    - Comment faire quand il y a des disputes dans l'équipe fondatrice ?
+    - Mon équipe ne s'entend plus, que dois-je faire ?
+    - Comment éviter que les conflits nuisent à ma startup ?
+
+- intent: entrepreneur_mistakes
+  examples: |
+    - What is the biggest mistake student entrepreneurs make?
+    - What are common mistakes student entrepreneurs should avoid?
+    - What do most student startup founders do wrong?
+    - What are some big mistakes students make when starting a startup?
+    - What is the most common failure point for student startups?
+    - What should I avoid as a student entrepreneur?
+    - What are the top reasons student startups fail?
+    - What do student founders often overlook?
+    - What is the worst mistake I could make as a student founder?
+    - What's something most student entrepreneurs regret doing?
+    - What are some lessons student founders usually learn the hard way?
+    - What do first-time student founders usually mess up?
+    - What should I be careful about when launching a startup in university?
+    - What are common errors student entrepreneurs tend to make?
+    - What is a frequent reason for student startup failure?
+    - Quelle est la plus grande erreur que font les étudiants entrepreneurs ?
+    - Quelle est l'erreur la plus fréquente chez les entrepreneurs étudiants ?
+    - Quelles sont les erreurs courantes chez les étudiants qui lancent une startup ?
+    - C'est quoi la plus grosse erreur qu'un étudiant entrepreneur peut faire ?
+    - Quels sont les pièges à éviter quand on est étudiant et qu'on lance un projet ?
+    - Quelle erreur les étudiants font-ils souvent quand ils se lancent dans l'entrepreneuriat ?
+    - Y a-t-il une erreur classique chez les entrepreneurs encore à l'université ?
+    - Quelles fautes les jeunes entrepreneurs commettent le plus souvent ?
+    - Quelle est l'erreur numéro un des étudiants qui créent leur startup ?
+    - En tant qu'étudiant entrepreneur, quelle est l'erreur à ne surtout pas faire ?
+
+
+- intent: team_motivation 
+  examples: |
+    - How do I keep my team motivated when progress is slow?
+    - What can I do to keep my startup team energized during tough times?
+    - How do I maintain motivation in the team when things aren't moving fast?
+    - What is the best way to inspire my team when we're stuck?
+    - How do I boost morale when we are not hitting milestones?
+    - Any tips for keeping my team focused when we are not seeing results?
+    - How can I keep my co-founders and teammates motivated during slow growth?
+    - What should I do when progress is slow and motivation drops?
+    - How do you handle motivation in a startup during setbacks?
+    - How do I stop my team from burning out when we're not seeing success yet?
+    - What's a good way to lift team spirit when growth is stagnant?
+    - How to stay motivated during tough phases?
+    - Comment garder mon équipe motivée quand les progrès sont lents ?
+    - Que faire pour motiver mon équipe quand on avance lentement ?
+    - Comment maintenir la motivation de l'équipe quand ça n'avance pas vite ?
+    - Mon équipe perd la motivation, comment la remotiver ?
+    - Des conseils pour garder une équipe motivée malgré peu de résultats ?
+    - Comment éviter que mon équipe se décourage quand on stagne ?
+    - Comment faire pour que l'équipe reste engagée même en période de lenteur ?
+    - Que dire à mon équipe pour qu'elle reste motivée quand le projet avance lentement ?
+    - Quand les progrès sont lents, comment remotiver les troupes ?
+    - Comment booster le moral de mon équipe en période de stagnation ?
+
+- intent: team_size_advice
+  examples: |
+    - Is it better to choose a smaller team or a bigger team as a start?
+    - Should I start my company with a small or large team?
+    - What's the ideal team size for an early-stage startup?
+    - Should I build a small, focused team or hire more people early on?
+    - How many people should I have in my startup team at the beginning?
+    - Is it better to start with a few key people or a larger team?
+    - What's the advantage of starting with a small team vs. a big team?
+    - Should I scale my team early or keep it small first?
+    - How big should my founding team be?
+    - What's the risk of starting with too many people in a startup?
+    - Is a smaller team more effective for an early startup?
+    - Should I hire a full team or just a few core people to start?
+    - Vaut-il mieux commencer avec une petite équipe ou une grande équipe ?
+    - Est-ce préférable de démarrer avec une équipe réduite ou plus large ?
+    - Pour lancer une startup, faut-il une petite ou une grande équipe ?
+    - Est-il mieux de choisir une petite équipe au début ?
+    - Quelle est la taille idéale d'une équipe pour commencer un projet ?
+    - Mieux vaut une équipe nombreuse ou restreinte au départ ?
+    - Est-ce risqué de démarrer avec trop de personnes dans l'équipe ?
+    - Une startup doit-elle commencer avec une équipe minimale ?
+    - Quelle taille d'équipe recommandez-vous pour le lancement d'une startup ?
+    - Faut-il privilégier une équipe compacte ou plus étendue dès le début ?
+
+- intent: best_tip
+  examples: |
+    - what is your number one tip for a student founder?
+    - What's your best advice for a student entrepreneur?
+    - Any top tips for students starting a business?
+    - What should a student founder focus on first?
+    - What's your biggest piece of advice for young entrepreneurs?
+    - As a student, what should I know before launching a startup?
+    - What's one thing every Algerian student founder should keep in mind?
+    - Do you have any advice for building a startup as a student?
+    - What's your most important advice for a university founder?
+    - How can a student succeed in entrepreneurship?
+    - What do you recommend for Algerian student entrepreneurs?
+    - Top recommendation for students starting businesses?
+    - Quel est ton conseil numéro un pour un étudiant fondateur ?
+    - C'est quoi ton meilleur conseil pour un étudiant qui lance une startup ?
+    - Quel est le top conseil que tu donnerais à un étudiant entrepreneur ?
+    - Si tu devais donner un seul conseil à un fondateur étudiant, ce serait quoi ?
+    - Ton conseil le plus important pour un étudiant qui démarre une entreprise ?
+    - Quel est le meilleur conseil pour un étudiant fondateur ?
+    - Un conseil clé pour un étudiant qui veut créer une startup ?
+    - Quelle est la chose la plus importante à savoir quand on est étudiant entrepreneur ?
+    - Un seul conseil pour un étudiant qui veut se lancer ?
+    - Ton astuce numéro un pour un étudiant qui fonde sa startup ?
+
+
+- intent: underrated_growth_hack 
+  examples: |
+    - What is the most underrated growth hack for student startups?
+    - What's a low-key growth strategy student founders should try?
+    - Any underrated tactics for growing a student-led startup?
+    - What are some hidden growth hacks for student entrepreneurs?
+    - What's one growth hack no one talks about for student startups?
+    - What's an overlooked way to grow a startup as a student?
+    - Do you know any growth hacks that student startups often ignore?
+    - What's a secret weapon for student startup growth?
+    - What growth strategy do most student founders miss?
+    - What's a growth trick student entrepreneurs don't usually think of?
+    - What's a powerful yet underrated growth move for student businesses?
+    - What's something non-obvious that helps student startups grow?
+    - What's one underused tactic to boost traction as a student founder?
+    - What's a growth tip that flies under the radar for student entrepreneurs?
+    - What's one simple but effective hack to grow a student-run startup?
+    - Are there any uncommon growth strategies that work well for students?
+    - Quel est le hack de croissance le plus sous-estimé pour les startups étudiantes ?
+    - C'est quoi l'astuce de croissance la plus méconnue pour une startup lancée par des étudiants ?
+    - Quelle stratégie de croissance est souvent négligée par les étudiants entrepreneurs ?
+    - Quel growth hack les étudiants oublient souvent ?
+    - Quel est le hack de croissance que peu d'étudiants utilisent mais qui fonctionne ?
+    - Une astuce de croissance efficace mais rarement utilisée par les startups étudiantes ?
+    - Quel hack de croissance est trop souvent sous-évalué dans les projets étudiants ?
+    - Quelle tactique de croissance intelligente est encore méconnue des étudiants fondateurs ?
+    - Quel est le secret de croissance que les startups étudiantes devraient connaître ?
+    - Quel est le meilleur hack de croissance dont personne ne parle dans les startups étudiantes ?
+
+- intent: skeep_classes
+  examples: |
+    - Should I skip classes to work on my startup?
+    - Is it okay to miss class for my startup?
+    - Can I prioritize my startup over university lectures?
+    - Should I focus more on my startup than attending class?
+    - Is skipping class worth it if I'm building a startup?
+    - Should I ditch classes to make progress on my startup?
+    - Do successful founders skip class to work on their ideas?
+    - What if I want to work on my startup instead of going to class?
+    - Should I invest more time in my startup than in my classes?
+    - Is it smart to trade class time for startup progress?
+    - How do I balance classes and my startup? Can I skip some?
+    - What do other student founders do—skip class or try to balance both?
+    - Est-ce que je devrais sauter des cours pour travailler sur ma startup ?
+    - Faut-il négliger mes études pour me concentrer sur ma startup ?
+    - Dois-je arrêter d'assister aux cours pour me consacrer entièrement à mon projet ?
+    - Est-ce une bonne idée de manquer des cours pour développer ma startup ?
+    - Devrais-je sacrifier mes études pour avancer dans mon entreprise ?
+    - Est-ce que ça vaut le coup de sauter des cours pour faire avancer ma startup ?
+    - Est-il préférable de manquer des cours pour travailler sur ma startup ?
+    - Est-ce que je devrais privilégier mon startup au détriment de mes études ?
+    - Les études ou la startup ? Que faire quand on doit choisir ?
+    - Est-il raisonnable de délaisser les cours pour se concentrer sur son entreprise ?
+
+- intent: validate_vs_perfectit
+  examples: |
+    - Should I spend months perfecting my idea or launch a basic verification?
+    - Is it better to perfect my idea or test it quickly?
+    - Should I wait until my idea is fully polished before launching?
+    - Should I focus on building a solid MVP or keep improving my idea?
+    - Is launching early with a simple version better than waiting?
+    - Should I release a rough version of my idea to test it?
+    - How do I know if my idea is ready or if I should validate first?
+    - What comes first — perfecting the idea or verifying demand?
+    - Should I keep developing or release a basic prototype to get feedback?
+    - Is it risky to launch without perfecting everything?
+    - Devrais-je passer des mois à perfectionner mon idée ou lancer une version basique pour vérifier ?
+    - Faut-il prendre le temps de perfectionner mon idée ou commencer par une validation rapide ?
+    - Est-il préférable de peaufiner mon idée pendant des mois ou lancer une version minimale pour tester ?
+    - Dois-je attendre avant de lancer et perfectionner mon idée ou démarrer avec une version simple ?
+    - Est-ce mieux de perfectionner l'idée avant le lancement ou faire une première vérification de base ?
+    - Faut-il améliorer mon idée avant de la tester ou lancer une version basique pour voir si ça fonctionne ?
+    - Dois-je passer du temps à peaufiner mon concept ou sortir une version simplifiée pour valider ?
+    - Quel est le mieux : perfectionner l'idée pendant des mois ou tester une version basique rapidement ?
+    - Devrais-je attendre de tout perfectionner ou commencer avec un produit minimum viable pour tester ?
+    - Lancer une version basique pour tester ou prendre le temps de perfectionner l'idée avant ?
+
+- intent: ask_eligibility_criteria
+  examples: |
+      - What are the eligibility criteria for funding?
+      - Who can apply for financial support?
+      - What are the requirements for getting a grant?
+      - Can students apply for funding?
+      - Do I need to be a registered company to get funding?
+      - Is there any age limit for funding applications?
+      - Quelles sont les conditions d'éligibilité au financement?
+      - Est-ce que tout le monde peut bénéficier d'un financement?
+   
+- intent: ask_application_process
+  examples: |
+      - How do I apply for funding?
+      - What steps should I follow to get financial aid?
+      - Where can I submit my funding application?
+      - What documents do I need to apply for funding?
+      - How long does it take to process a funding request?
+      - Quelle est la procédure pour demander un financement?
+      - Où dois-je déposer ma demande?
+      - Quels sont les papiers nécessaires?
+    
+- intent: ask_deadlines
+  examples: |
+      - When is the deadline for funding applications?
+      - Are there specific dates for funding programs?
+      - Can I apply for funding anytime?
+      - How often do funding opportunities open?
+      - Quelle est la date limite pour déposer ma demande?
+      - Est-ce qu'il y a un délai fixe pour les demandes?
+     
+- intent: ask_funding_programs
+  examples: |
+      - What funding programs are available in Algeria?
+      - I'm looking for financial aid for a project
+      - Is there a funding program for students?
+      - How can I benefit from CNAC? 
+      - Are there any aids for young entrepreneurs?
+      - I have a project idea but no money, what should I do?
+      - Can someone start a project without capital in Algeria?
+      - Does the government support startups?
+      - Quels sont les programmes de financement en Algérie?
+      - Est-ce qu'il y a du soutien pour créer une entreprise?
+      - C'est quoi les aides comme CNAC ou ANSEJ?
+      - Est-ce que je peux bénéficier de CNAC ou ANSEJ?
+      - What are the available funding opportunities?
+      - Can you tell me about funding options for startups?
+      - How can I get financial support for my project?
+      - Are there any grants or sponsorships available?
+      - Where can I apply for funding?
+      - Any financial aid for new businesses?
+      - Who provides these funding opportunities?
+      - Are these funds from the government or private sectors?
+      - Can NGOs provide financial support?
+      - What are the main funding sources for startups?
+      - Are there international grants available?
+     
+- intent: what_is_cnac
+  examples: |
+      - Cest quoi CNAC 
+      - Peux-tu m'expliquer ce qu'est la CNAC
+      - Que signifie CNAC 
+      - Quel est le rôle de la CNAC 
+      - Quest-ce que le programme CNAC 
+      - Que représente la CNAC
+      - Que propose le programme CNAC 
+      - What is CNAC   
+      - Can you explain what CNAC is
+      - What does CNAC stand for
+      - What does CNAC mean
+      - What organization is CNAC
+      - Could you tell me about CNAC
+      - What is the CNAC program
+      - Can you tell me about the CNAC program
+     
+- intent: how_to_join_cnac
+  examples: |
+      - Comment bénéficier de CNAC?
+      - Quelles sont les conditions pour accéder à CNAC?
+      - Comment rejoindre le programme CNAC?
+      - omment profiter du programme CNAC
+      - Comment s'inscrire au programme CNAC 
+      - Que faut-il faire pour avoir droit à la CNAC
+      - Que faut-il faire pour avoir droit à la CNAC
+      - Je veux bénéficier de la CNAC, comment faire
+      - Quels sont les critères pour avoir accès à la CNAC
+      - Comment accéder au programme CNAC
+      - How can I benefit from CNAC
+      - What do I need to do to get CNAC support
+      - How do I apply for the CNAC program
+      - What are the steps to benefit from CNAC
+      - What are the requirements to benefit from CNAC
+      - How to access CNAC services
+      - What are the conditions for getting CNAC help
+      - How does someone qualify for CNAC
+
+    
+- intent: what_is_ansej
+  examples: |
+      - Cest quoi ANSEJ?
+      - Que veut dire ANSEJ 
+      - Que signifie ANSEJ?
+      - Quest-ce que le programme ANSEJ?
+      - Quel est le rôle de lANSEJ?
+      - L'ANSEJ, c'est quoi exactement ?
+      - What is ANSEJ?
+      - Can you tell me what ANSEJ is
+      - What is the ANSEJ program
+      - What kind of program is ANSEJ
+      - Do you know what ANSEJ is
+   
+- intent: how_to_join_ansej
+  examples: |
+      - Comment bénéficier dANSEJ?
+      - Quelles sont les conditions pour ANSEJ?
+      - Qui a le droit de sinscrire à ANSEJ?
+      - Comment postuler à ANSEJ?
+      - Comment profiter du programme ANSEJ
+      - Quelles sont les démarches pour bénéficier de l'ANSEJ
+      - Comment accéder à l'aide de l'ANSEJ 
+      - Quels sont les critères pour être éligible à l'ANSEJ
+      - How can I benefit from ANSEJ?
+      - What do I need to do to get ANSEJ support
+      - How do I apply for the ANSEJ program
+      - How to access ANSEJ assistance
+      - I want to benefit from ANSEJ, how
+      - How does someone qualify for ANSEJ?
+      - How can I get help through ANSEJ
+
+     
+- intent: who_can_apply_cnac
+  examples: |
+      - Who can apply to CNAC?
+      - Am I eligible for CNAC?
+      - Who has the right to benefit from CNAC?
+      - Can I join CNAC if I am unemployed?
+      - Is CNAC only for young people?
+      - Who can benefit from CNAC
+      - Is CNAC open to everyone
+      - Who qualifies for the CNAC program
+      - Who can get help from CNAC
+      - Qui peut bénéficier du programme CNAC?
+      - Est-ce que les chômeurs peuvent sinscrire?
+      - Qui peut postuler à la CNAC 
+      - Qui a droit à la CNAC 
+      - Quelles sont les personnes concernées par la CNAC
+      - Qui peut s'inscrire à la CNAC
+     
+- intent: who_can_apply_ansej
+  examples: |
+      - Who can apply to ANSEJ?
+      - Am I eligible for ANSEJ?
+      - Can students benefit from ANSEJ?
+      - I'm 20, can I join ANSEJ?
+      - What are the requirements for ANSEJ?
+      - Who can benefit from ANSEJ
+      - Who can register for the ANSEJ program
+      - Who can participate in ANSEJ
+      - Qui peut s'inscrire à ANSEJ?
+      - Est-ce qu'un étudiant peut en bénéficier?
+      - Qui peut postuler à l'ANSEJ
+      - L'ANSEJ, c'est pour qui
+      - Qui peut recevoir de l'aide de l'ANSEJ
+      - À qui s'adresse l'ANSEJ
+
+     
+- intent: how_to_find_funding_algeria
+  examples: |
+      - How can I find funding opportunities in Algeria?
+      - I have no money but want to start a project, what should I do?
+      - Are there any Algerian platforms for grants or funding?
+      - How do Algerian students get funds?
+      - What funding programs exist in Algeria
+      - Where can I look for grants in Algeria?
+      - Are there any startup funds for algerian students 
+      - Who offers financial support in Algeria
+      - Où puis-je chercher des financements en Algérie?
+      - Comment les étudiants trouvent-ils du soutien financier?
+      - Existe-t-il des aides pour les startups en Algérie
+      - Quelles sont les aides financières pour les étudiants
+      - Quels programmes aident les étudiants financièrement
+      - Quelles sont les options de financement pour les étudiants
+
+     
+- intent: how_to_fund_project_as_student
+  examples: |
+      - I'm a student, how can I fund my idea?
+      - Can a university student get a funding opportunity?
+      - I have a tech project, how to finance it?
+      - Are there student-focused grants in Algeria?
+      - En tant qu'étudiant, quelles sont les possibilités pour financer mon idée ?
+      - Un étudiant à l'université peut-il obtenir des opportunités de financement ?
+      - J'ai un projet technologique, comment le financer en étant étudiant ?
+      - Existe-t-il des bourses ou des subventions spécifiquement destinées aux étudiants en Algérie pour leurs projets ?
+      - Comment un jeune entrepreneur étudiant peut-il trouver des fonds pour son projet ?
+      - Quels sont les dispositifs de financement pour les initiatives étudiantes ?
+
+- intent: platforms_for_funding_opportunities
+  examples: |
+      - Where can I find funding platforms?
+      - Are there websites that post Algerian funding opportunities?
+      - Are there online platforms for getting funding
+      - Can you list some funding platforms
+      - Where can I apply for funding online
+      - What platforms support startups funding
+      - How do I get notified about funding chances?
+      - Is there a platform for Algerian entrepreneurs to find grants?
+      - Y a-t-il une plateforme pour les financements en Algérie?
+      - Existe-t-il un site web pour les opportunités de subvention?
+      - Quelles plateformes proposent des aides financières
+      - Où peut-on postuler pour un financement en ligne
+      - Où trouver des aides via des plateformes 
+      - Quels sont les sites de financement participatif 
+     
+- intent: can_i_get_funding_with_no_capital
+  examples: |
+      - I have no money, can I still find funding?
+      - Is it possible to get funded without having any capital?
+      - I don't have money, what are my options?
+      - How can I fund my idea with zero budget?
+      - Can I receive funding if I have no money
+      - Do I need my own capital to get funding
+      - Can someone without savings get financial support
+      - How do I get funding if I have no funds
+      - Est-il possible d'être financé sans capital
+      - Je n'ai aucun capital, puis-je quand même lancer un projet?
+      - Est-ce que c'est possible d'avoir un financement sans argent?
+      - Je n'ai pas d'argent, puis-je être financé
+      - Le financement est-il possible sans épargne personnelle 
+      - Faut-il obligatoirement un capital pour être financé
+      - Peut-on être aidé financièrement sans apport initia
+
+   
+- intent: real_life_funding_examples_algeria
+  examples: |
+      - Do you know examples of Algerians who got funded?
+      - Are there real stories of students who got support?
+      - Do you know any students who received financial aid
+      - Are there successful students who were supported financially
+      - Do you have examples of supported students
+      - Are there cases where students got financial support
+      - Who in algeria students has benefited from startup programs
+      - Who got funding in Algeria before?
+      - Do you know algerian students who launched businesses with funding
+      - Any real examples of Algerians who got project fundings
+      - Give me a successful funding story in Algeria
+      - donnez moi des exemples des Algerien qui ont de soutien?
+      - Y a-t-il des etudiants algériens qui ont réussi grâce au financement
+      - Des exemples de startups financées en Algérie ?
+      - Est-ce que des algériens ont créé leur startup avec aide
+    
+- intent: mistakes_to_avoid_when_applying
+  examples: |
+      - What are the common mistakes when applying for funding?
+      - What should I avoid when applying for funding
+      - What should I avoid when I apply for ANSEJ or CNAC?
+      - Tell me errors people usually make in funding applications
+      - Why do funding applications get rejected
+      - How do people mess up funding applications
+      - What can go wrong in a funding request
+      - Why might I not get approved for funding
+      - I don't want to get rejected, what should I not do?
+      - Quels sont les pièges à éviter lors d'une demande?
+      - Quelles erreurs éviter pour maximiser mes chances?
+      - Quelles sont les erreurs fréquentes lors d'une demande de financement 
+      - Que ne faut-il pas faire pour obtenir une aide financière 
+      - Quelles erreurs peuvent empêcher d'obtenir un financement
+      - Qu'est-ce qui fait échouer une demande de financement
+
+- intent: ask_steps_to_create_startup
+  examples: |
+    - What are the steps to start a startup in Algeria?
+    - Can you explain the process of creating a startup in Algeria?
+    - How do I create a startup?
+    - How do I launch a startup in Algeria?
+    - What is the procedure for starting a business in Algeria?
+    - Guide me through startup creation in Algeria
+    - Quelles sont les étapes pour créer une startup en Algérie?
+    - Comment créer une startup en Algérie?
+    - Explique-moi le processus de création d'une startup
+    - Quelle est la procédure pour lancer une entreprise en Algérie?
+
+- intent: ask_where_to_register
+  examples: |
+    - Where can I register my startup in Algeria?
+    - Which office handles startup registration in Algeria?
+    - Where do I go to register my company?
+    - What's the registration location for a new business?
+    - Où puis-je enregistrer ma startup en Algérie?
+    - Quel bureau gère l'enregistrement des startups?
+    - À quel endroit dois-je m'inscrire pour ma société?
+
+- intent: ask_get_commercial_registration
+  examples: |
+    - How do I obtain a commercial registration certificate?
+    - What is the procedure to get a trade register?
+    - How to get commercial registration?
+    - What steps to take for obtaining business registration?
+    - Comment obtenir un registre de commerce?
+    - Quelle est la procédure pour avoir un certificat d'enregistrement commercial?
+    - Comment faire pour avoir le registre commercial?
+
+- intent: ask_required_documents
+  examples: |
+    - What documents are required to create a company?
+    - Which papers do I need to register my startup?
+    - List of necessary documents for company registration
+    - What documentation do I need for my startup?
+    - Quels documents sont nécessaires pour créer une entreprise?
+    - Quels papiers dois-je fournir pour enregistrer ma startup?
+    - Liste des documents requis pour l'inscription d'une société
+
+- intent: ask_legal_structure_difference
+  examples: |
+    - What is the difference between an LLC and a sole proprietorship?
+    - Which is better, SARL or individual company?
+    - Compare different legal structures for businesses
+    - SARL vs EURL, what's the difference?
+    - Quelle est la différence entre une SARL et une entreprise individuelle?
+    - Qu'est-ce qui est mieux, SARL ou entreprise unipersonnelle?
+    - Comparaison entre SARL et EURL
+
+- intent: ask_need_to_publish_statutes
+  examples: |
+    - Do I need to publish my company's statutes?
+    - Is publishing the legal statutes of a startup mandatory?
+    - Are company statutes required to be public?
+    - Must I make my business bylaws public?
+    - Dois-je publier les statuts de mon entreprise?
+    - Est-ce obligatoire de publier les statuts juridiques d'une startup?
+    - La publication des statuts est-elle nécessaire?
+
+- intent: ask_content_of_statutes
+  examples: |
+    - What should be included in a company's legal statutes?
+    - What information must be in the startup's articles of association?
+    - Content requirements for business bylaws
+    - What to write in company statutes?
+    - Que doit contenir les statuts d'une entreprise?
+    - Quelles informations doivent figurer dans les statuts d'une startup?
+    - Contenu nécessaire pour les statuts juridiques
+
+- intent: ask_tax_obligations
+  examples: |
+    - What are the tax obligations for a startup?
+    - Do I have to pay taxes if I start a company?
+    - Startup taxation in Algeria
+    - What taxes will my new business face?
+    - Quelles sont les obligations fiscales pour une startup?
+    - Dois-je payer des impôts si je crée une entreprise?
+    - Fiscalité des startups en Algérie
+
+- intent: ask_get_nif
+  examples: |
+    - What is the Tax Identification Number (NIF) and how do I get it?
+    - How can I obtain a NIF in Algeria?
+    - Process to get a tax ID for my business
+    - NIF application procedure
+    - Qu'est-ce que le Numéro d'Identification Fiscale (NIF) et comment l'obtenir?
+    - Comment obtenir un NIF en Algérie?
+    - Procédure pour avoir un identifiant fiscal
+
+- intent: ask_register_with_tax_authority
+  examples: |
+    - Do I need to register my company with the tax authorities?
+    - Should a startup be declared to the tax office?
+    - Is tax registration mandatory for new businesses?
+    - Tax authority registration requirements
+    - Dois-je enregistrer mon entreprise auprès des autorités fiscales?
+    - Une startup doit-elle être déclarée au fisc?
+    - L'inscription fiscale est-elle obligatoire?
+
+- intent: ask_use_home_as_headquarters
+  examples: |
+    - Can I use my home as a company headquarters?
+    - Is it legal to register my company at my house?
+    - Using residential address for business registration
+    - Home office as legal business address
+    - Puis-je utiliser mon domicile comme siège social?
+    - Est-ce légal d'enregistrer mon entreprise à mon adresse personnelle?
+    - Utiliser son adresse résidentielle pour une entreprise
+
+- intent: ask_domiciliation_options
+  examples: |
+    - What are the options for company domiciliation in Algeria?
+    - Where can I domicile my startup?
+    - Different address options for business registration
+    - Alternatives for company's official address
+    - Quelles sont les options de domiciliation d'entreprise en Algérie?
+    - Où puis-je domicilier ma startup?
+    - Alternatives pour l'adresse officielle d'une société
+
+- intent: ask_incubator_domiciliation
+  examples: |
+    - Are there incubators offering domiciliation services?
+    - Can coworking spaces help with business address registration?
+    - Incubator address services for startups
+    - Domiciliation through startup support organizations
+    - Existe-t-il des incubateurs offrant des services de domiciliation?
+    - Les espaces de coworking peuvent-ils aider avec l'adresse d'entreprise?
+    - Services d'adresse pour startups dans les incubateurs
+
+- intent: ask_solo_startup
+  examples: |
+    - Can I start a startup alone in Algeria?
+    - Is it possible to create a company without partners?
+    - Single founder startup options
+    - Creating a business by myself
+    - Puis-je créer une startup seul en Algérie?
+    - Est-il possible de créer une entreprise sans associés?
+    - Options pour créer une entreprise tout seul
+
+- intent: ask_partners_roles
+  examples: |
+    - What are the roles of partners in an LLC?
+    - What responsibilities do associates have in a startup?
+    - Partner duties in a company
+    - Legal obligations of business partners
+    - Quels sont les rôles des associés dans une SARL?
+    - Quelles responsabilités ont les associés dans une startup?
+    - Obligations légales des partenaires d'affaires
+
+- intent: ask_required_capital
+  examples: |
+    - How much capital is required to start a company?
+    - What is the minimum capital for a startup in Algeria?
+    - Capital requirements for different business structures
+    - How much money needed to register a business
+    - Quel capital est nécessaire pour démarrer une entreprise?
+    - Quel est le capital minimum pour une startup en Algérie?
+    - Exigences de capital pour différentes structures juridiques
+
+- intent: ask_obtain_startup_label
+  examples: |
+    - How can I obtain the 'Startup' label in Algeria?
+    - What is the process to get labeled as a startup?
+    - Official startup recognition procedure
+    - Steps to get startup status certification
+    - Comment obtenir le label 'Startup' en Algérie?
+    - Quel est le processus pour être labellisé comme startup?
+    - Procédure de reconnaissance officielle des startups
+
+- intent: ask_startup_label_advantages
+  examples: |
+    - What are the benefits of having the Startup label?
+    - Does the Startup label offer any tax advantages?
+    - Privileges for officially recognized startups
+    - Advantages of the startup certification
+    - Quels sont les avantages d'avoir le label Startup?
+    - Le label Startup offre-t-il des avantages fiscaux?
+    - Privilèges pour les startups officiellement reconnues
+
+- intent: ask_funding_and_support
+  examples: |
+    - Are there any grants for young entrepreneurs?
+    - Where can I find financial help to start a company?
+    - Government support for new businesses
+    - Financial assistance programs for startups
+    - Existe-t-il des subventions pour jeunes entrepreneurs?
+    - Où puis-je trouver de l'aide financière pour démarrer une entreprise?
+    - Soutien gouvernemental pour nouvelles entreprises
+
+- intent: ask_find_funding
+  examples: |
+    - Where can I find funding for my startup?
+    - How do I get investment for my business idea?
+    - Startup financing options in Algeria
+    - Raising capital for a new business
+    - Où puis-je trouver du financement pour ma startup?
+    - Comment obtenir des investissements pour mon idée d'entreprise?
+    - Options de financement pour startups en Algérie
+
+- intent: ask_official_guide
+  examples: |
+    - Is there an official guide to creating a startup?
+    - Where can I find a legal guide for opening a company?
+    - Government resources for business creation
+    - Official startup creation manual
+    - Existe-t-il un guide officiel pour créer une startup?
+    - Où puis-je trouver un guide juridique pour ouvrir une entreprise?
+    - Ressources gouvernementales pour la création d'entreprise
+
+- intent: ask_online_platform
+  examples: |
+    - Is there an online platform to start my company?
+    - Can I register my startup online?
+    - Digital services for business registration
+    - Online company creation services
+    - Existe-t-il une plateforme en ligne pour créer mon entreprise?
+    - Puis-je enregistrer ma startup en ligne?
+    - Services numériques pour l'enregistrement d'entreprise
+
+- intent: ask_duration_to_start
+  examples: |
+    - How long does it take to set up a business?
+    - What's the timeline for starting a company?
+    - Duration of startup registration process
+    - Time needed to complete business creation
+    - Combien de temps faut-il pour créer une entreprise?
+    - Quel est le délai pour démarrer une société?
+    - Durée du processus d'enregistrement d'une startup
+
+- intent: ask_startup_mistakes
+  examples: |
+    - What mistakes should I avoid when launching a startup?
+    - What are the common errors when creating a startup?
+    - Pitfalls in business creation
+    - Startup failures to learn from
+    - Quelles erreurs dois-je éviter lors du lancement d'une startup?
+    - Quelles sont les erreurs courantes lors de la création d'une startup?
+    - Pièges dans la création d'entreprise
+
+- intent: ask_startup_costs
+  examples: |
+    - What are the costs involved in starting a company?
+    - How much money do I need to launch a startup?
+    - Typical expenses for business creation
+    - Budget needed for company registration
+    - Quels sont les coûts impliqués dans la création d'une entreprise?
+    - Combien d'argent ai-je besoin pour lancer une startup?
+    - Dépenses typiques pour la création d'entreprise
+
+- intent: ask_legal_procedure
+  examples: |
+    - What is the legal procedure to start a startup in Algeria?
+    - What is the legal procedure to start a startup?
+    - What are the steps to start a startup?
+    - What are the legal steps to register a startup in Algeria?
+    - Quelle est la procédure légale pour créer une startup en Algérie?
+    - Quelles sont les démarches légales pour enregistrer une startup?
+    - Processus juridique de création d'entreprise en Algérie
+
+- intent: ask_documents
+  examples: |
+    - What documentation is required to legally register a startup?
+    - Can you provide a list of documents needed to start a startup?
+    - Are there any specific forms or permits needed to launch a startup?
+    - Which legal documents must be filed to establish a new startup?
+    - What documents are needed to start a startup?
+    - Quelle documentation est requise pour enregistrer légalement une startup?
+    - Pouvez-vous fournir une liste des documents nécessaires pour créer une startup?
+    - Quels formulaires ou permis sont nécessaires pour lancer une startup?
+    - Quels documents juridiques doivent être déposés pour établir une nouvelle startup?
+
+- intent: ask_legal_status
+  examples: |
+    - What is the legal status of a startup in Algeria?
+    - What is the legal status of a startup?
+    - What types of business entities are available for startups?
+    - Legal forms for new businesses in Algeria
+    - Quel est le statut juridique d'une startup en Algérie?
+    - Quel est le statut légal d'une startup?
+    - Quels types d'entités commerciales sont disponibles pour les startups?
+    - Formes juridiques pour nouvelles entreprises en Algérie
+
+- intent: ask_tax
+  examples: |
+    - Do I need to register my business with the tax authorities?
+    - Is it mandatory to register my company with the tax administration?
+    - Tax registration requirements for startups
+    - How to declare my business to tax authorities
+    - Est-il obligatoire d'enregistrer ma société auprès de l'administration fiscale?
+    - Exigences d'enregistrement fiscal pour les startups
+    - Comment déclarer mon entreprise aux autorités fiscales
+
+- intent: ask_home_office_of_startup
+  examples: |
+    - Is it allowed to use my home address as the company's office?
+    - Can my residence serve as the legal address of my business?
+    - Using personal residence for business registration
+    - Home as official company address regulations
+    - Est-il permis d'utiliser mon adresse personnelle comme bureau de l'entreprise?
+    - Ma résidence peut-elle servir d'adresse légale pour mon entreprise?
+    - Utilisation de la résidence personnelle pour l'enregistrement d'entreprise
+    - Réglementations concernant le domicile comme adresse officielle d'entreprise
+
+- intent: ask_startup_alone
+  examples: |
+    - Can you start a startup alone in Algeria?
+    - Is it possible to create a startup alone in Algeria?
+    - Solo entrepreneurship in Algeria
+    - Single founder business options
+    - Peut-on créer une startup seul en Algérie?
+    - Est-il possible de créer une startup seul en Algérie?
+    - Entrepreneuriat en solo en Algérie
+    - Options d'entreprise pour fondateur unique
+
+
+
+
+

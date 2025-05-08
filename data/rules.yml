@@ -1,7 +1,6 @@
 version: "3.1"
 
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -10,4 +9,199 @@ rules:
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge
-  - action: utter_iamabot
+  - action: utter_bot_challenge
+
+- rule: Activate startup basics form
+  steps:
+  - intent: ask_what_is_startup
+  - action: utter_ask_what_is_startup
+
+- rule: Respond to what type of diploma
+  steps:
+  - intent: what_type_of_diploma
+  - action: utter_what_type_of_diploma
+
+- rule: Respond to training inquiry
+  steps:
+  - intent: recieve_training
+  - action: utter_recieve_training
+
+- rule: Respond to application eligibility
+  steps:
+  - intent: can_i_apply
+  - action: utter_can_i_apply
+
+- rule: Respond to idea acceptance criteria
+  steps:
+  - intent: what_ideas_are_accepted
+  - action: utter_what_ideas_are_accepted
+
+- rule: Respond to team formation question
+  steps:
+  - intent: team_formation
+  - action: utter_team_formation
+
+- rule: Respond to registration process
+  steps:
+  - intent: registration_process
+  - action: utter_registration_process
+
+- rule: Respond to support resources inquiry
+  steps:
+  - intent: support_resources
+  - action: utter_support_resources
+
+- rule: Respond to business planning inquiry
+  steps:
+  - intent: business_planning
+  - action: utter_business_planning
+
+- rule: Respond to evaluation criteria
+  steps:
+  - intent: evaluation
+  - action: utter_evaluation
+
+- rule: Respond to outcomes and benefits
+  steps:
+  - intent: outcomes_benefits
+  - action: utter_outcomes_benefits
+
+- rule: Respond to integration with studies
+  steps:
+  - intent: integration_with_studies
+  - action: utter_integration_with_studies
+
+- rule: Welcome the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to who can apply
+  steps:
+  - intent: who_can_apply
+  - action: utter_who_can_apply
+
+- rule: Provide cofounders finding info
+  steps:
+  - intent: find_cofounders
+  - action: utter_find_cofounders
+
+- rule: Advise on partner choice
+  steps:
+  - intent: partner_choice
+  - action: utter_partner_choice
+
+- rule: Explain entrepreneur mistakes
+  steps:
+  - intent: entrepreneur_mistakes
+  - action: utter_entrepreneur_mistakes
+
+- rule: Advise on team motivation
+  steps:
+  - intent: team_motivation
+  - action: utter_team_motivation
+
+- rule: Advise on team size
+  steps:
+  - intent: team_size_advice
+  - action: utter_team_size_advice
+
+- rule: Share best tip
+  steps:
+  - intent: best_tip
+  - action: utter_best_tip
+
+- rule: Share growth hack
+  steps:
+  - intent: underrated_growth_hack
+  - action: utter_underrated_growth_hack
+
+- rule: Address skipping classes
+  steps:
+  - intent: skeep_classes
+  - action: utter_skeep_classes
+
+- rule: Address validation vs perfection
+  steps:
+  - intent: validate_vs_perfectit
+  - action: utter_validate_vs_perfectit
+
+- rule: Explain eligibility criteria
+  steps:
+  - intent: ask_eligibility_criteria
+  - action: utter_ask_eligibility_criteria
+
+- rule: Explain application process
+  steps:
+  - intent: ask_application_process
+  - action: utter_ask_application_process
+
+- rule: Share deadlines info
+  steps:
+  - intent: ask_deadlines
+  - action: utter_ask_deadlines
+
+- rule: Explain funding programs
+  steps:
+  - intent: ask_funding_programs
+  - action: utter_ask_funding_programs
+
+- rule: Explain CNAC
+  steps:
+  - intent: what_is_cnac
+  - action: utter_what_is_cnac
+
+- rule: Explain how to join CNAC
+  steps:
+  - intent: how_to_join_cnac
+  - action: utter_how_to_join_cnac
+
+- rule: Explain ANSEJ
+  steps:
+  - intent: what_is_ansej
+  - action: utter_what_is_ansej
+
+- rule: Explain how to join ANSEJ
+  steps:
+  - intent: how_to_join_ansej
+  - action: utter_how_to_join_ansej
+
+- rule: Explain CNAC eligibility
+  steps:
+  - intent: who_can_apply_cnac
+  - action: utter_who_can_apply_cnac
+
+- rule: Explain ANSEJ eligibility
+  steps:
+  - intent: who_can_apply_ansej
+  - action: utter_who_can_apply_ansej
+
+- rule: Explain funding in Algeria
+  steps:
+  - intent: how_to_find_funding_algeria
+  - action: utter_how_to_find_funding_algeria
+
+- rule: Explain student project funding
+  steps:
+  - intent: how_to_fund_project_as_student
+  - action: utter_how_to_fund_project_as_student
+
+- rule: Share funding platforms
+  steps:
+  - intent: platforms_for_funding_opportunities
+  - action: utter_platforms_for_funding_opportunities
+
+- rule: Explain no-capital funding
+  steps:
+  - intent: can_i_get_funding_with_no_capital
+  - action: utter_can_i_get_funding_with_no_capital
+
+- rule: Share real funding examples
+  steps:
+  - intent: real_life_funding_examples_algeria
+  - action: utter_real_life_funding_examples_algeria
+
+- rule: Explain application mistakes
+  steps:
+  - intent: mistakes_to_avoid_when_applying
+  - action: utter_mistakes_to_avoid_when_applying

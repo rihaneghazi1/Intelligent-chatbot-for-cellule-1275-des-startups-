@@ -8,26 +8,747 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-
+  - ask_what_is_startup
+  - what_type_of_diploma
+  - recieve_training
+  - can_i_apply
+  - what_ideas_are_accepted
+  - team_formation
+  - registration_process
+  - support_resources
+  - business_planning
+  - evaluation
+  - outcomes_benefits
+  - integration_with_studies
+  - who_can_apply
+  - find_cofounders
+  - partner_choice
+  - conflicts
+  - entrepreneur_mistakes
+  - team_motivation
+  - team_size_advice
+  - best_tip
+  - underrated_growth_hack
+  - skeep_classes
+  - validate_vs_perfectit
+  - ask_eligibility_criteria
+  - ask_application_process
+  - ask_deadlines
+  - ask_funding_programs
+  - what_is_cnac
+  - how_to_join_cnac
+  - what_is_ansej
+  - how_to_join_ansej
+  - who_can_apply_cnac
+  - who_can_apply_ansej
+  - how_to_find_funding_algeria
+  - how_to_fund_project_as_student
+  - platforms_for_funding_opportunities
+  - can_i_get_funding_with_no_capital
+  - real_life_funding_examples_algeria
+  - mistakes_to_avoid_when_applying
+  - ask_steps_to_create_startup
+  - ask_where_to_register
+  - ask_get_commercial_registration
+  - ask_required_documents
+  - ask_legal_structure_difference
+  - ask_need_to_publish_statutes
+  - ask_content_of_statutes
+  - ask_tax_obligations
+  - ask_get_nif
+  - ask_register_with_tax_authority
+  - ask_use_home_as_headquarters
+  - ask_domiciliation_options
+  - ask_incubator_domiciliation
+  - ask_solo_startup
+  - ask_partners_roles
+  - ask_required_capital
+  - ask_obtain_startup_label
+  - ask_startup_label_advantages
+  - ask_funding_and_support
+  - ask_find_funding
+  - ask_official_guide
+  - ask_online_platform
+  - ask_duration_to_start
+  - ask_startup_mistakes
+  - ask_startup_costs
+  - ask_legal_procedure
+  - ask_documents
+  - ask_legal_status
+  - ask_tax
+  - ask_home_office_of_startup
+  - ask_startup_alone
+ 
+ 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+    - text: "Hello! I'm the Startup Algerian Assistant bot. How can I help you today?"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Goodbye! Feel free to come back if you have more questions about your startup journey."
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_ask_what_is_startup:
+    - text: | 
+        A university startup in Algeria is:
+        -A newly formed business venture created by students, faculty, or researchers from Algerian universities. 
+        -These startups typically leverage academic knowledge, research findings, or innovations developed within university settings to create commercial solutions.
+        - They often benefit from university incubators, government initiatives like the National Agency for the Development of SMEs (ANDPME), and technology transfer programs designed to bridge academia and industry."
+
+  utter_what_type_of_diploma:
+    - text: | 
+        In Algeria and Starting from the year 2025:
+        - Following the successful completion of your PFE startup project you'll receive :
+        -a double diploma (Licence + Start-Up(project economic certificate) or Master + Start-Up(project economic certificate)) in addition to possible rewards from sponsors.
+        - There's also a university certificate - project economic institution available under decision 1275.
+
+  utter_recieve_training:
+    - text: |
+        you will receive dedicated training sessions focused on :
+        - Management, e-marketing and marketing aspects during the 2nd semester. 
+        -The university incubators (ICOSNET, TECHINNOV, and GTA) will also help you with your project and to develop your Business Model Canvas (BMC)."
+
+  utter_can_i_apply:
+    - text: |
+        * If you're an M2 student at any Algerian university, you can apply to register your graduation project as a PFE Start-Up. 
+            -Registration forms are communicated at the beginning of each academic year.Starting from your third year you can apply to make a startup
+        * However Starting from your third year you can apply to make a startup(liscence students and engeneering)
+
+  utter_what_ideas_are_accepted:
+    - text: |
+        -The university encourages innovative projects with unique ideas that can potentially transform into economic institutions.
+
+  utter_team_formation:
+    - text: |
+        -For team formation: 
+        -Your PFE startup project can include 2-6 members, either from the same specialty or different specialties within the university."
+
+  utter_registration_process:
+    - text: | 
+        To register your PFE Startup:
+        - A registration form is communicated to M2 students at the beginning of each year. You must also register with one of the university's incubators (ICOSNET, TECHINNOV, or GTA) during the same period.
+        - however if you are not an M2 student then you can go to the Startup bureau to register your Startup.
+
+  utter_support_resources:
+    - text: | 
+        - The university offers three incubators: 
+        1/ICOSNET.
+        2/TECHINNOV.
+        3/ GTA.
+         they are located in the startup hall. They will help you develop your Business Model Canvas (BMC) and provide dedicated training for market research and marketing aspects during the 2nd semester.
+
+  utter_business_planning:
+    - text: | 
+        -The BMC (Business Model Canvas) is a :
+         -2-page report in the form of a table (Canvas) that contains your market research and marketing section. The university incubators will help you develop this."
+
+  utter_evaluation:
+    - text: | 
+        -PFE Startup projects in Algerian Universities are evaluated by a mixed jury consisting of:
+        - academics (your teachers) 
+        -business leaders (your sponsors), along with members from the incubator and CATI. 
+        However Only the academic jury's grade will appear on your transcript, but the overall grade (startup + academic) determines the ranking of startups."
+
+  utter_outcomes_benefits:
+    - text: | 
+        Upon successful completion, you'll receive a :
+        - double diploma (Licence + Start-Up or Master + Start-Up) 
+        - possible rewards from sponsors. 
+        The incubators will continue supporting your startup even after the presentation if you wish to continue."
+
+  utter_integration_with_studies:
+    - text: | 
+        -the goal is to transform graduation projects into economic institutions.
+        - The ALgerian university aims to create a generation of students with entrepreneurial spirit who can create wealth and jobs through innovation and technology."
+
+  utter_bot_challenge:
+    - text: "I'm a bot designed to help ALgerian university students with questions about PFE startup projects."
+
+  utter_fallback:
+    - text: "I'm sorry, I didn't understand that. Could you rephrase your question about PFE startups?"
+  
+  utter_who_can_apply:
+    - text: |
+        * If you're an M2 student at any Algerian university, you can apply to register your graduation project as a PFE Start-Up.
+        * Registration forms are communicated at the beginning of each academic year.
+        * Starting from your third year you can apply to make a startup (license students and engineering).
+        * Students from any specialty can participate in the startup program.
+
+  utter_find_cofounders:
+    - text: |
+         DO: 
+         1. Team up with skills you lack 
+         2. Join uni clubs/events: startup competitions, hackathons, entrepreneurship clubs..
+         3. Test their commitment before committing long term (work on a small project together)
+         DON'T:
+         1. Don't partner with someone just because they're available
+         2. Avoid "idea people" with no execution skills 
+         3. Don't skip equity talks (agree on splits early)
+
+  utter_partner_choice:
+    - text: |
+         Partner choice tips:
+         DO:
+         1. Prioritize skills and commitment over relationships 
+         2. Test strangers with small tasks before committing.  
+         3. Clearly define roles upfront (even with friends). 
+         DON'T:
+         1. Assume friends will be reliable co-founders.  
+         2. Reject skilled strangers due to lack of personal connection.
+
+  utter_conflicts:
+    - text: |
+        DO:
+         1. Listen actively: Understand all sides.
+         2. Communicate clearly: Be respectful and direct.
+         3. Address the problem, not the person
+         4. Write agreements down, even if informal
+         DON'T:
+        1. Take sides without hearing all perspectives.  
+        2. Let personal clashes affect business decisions.
+         3. Avoid issues and address them directly.
+         4. Let stress control you and maintain professionalism 
+
+  utter_entrepreneur_mistakes:
+    - text: |
+         The biggest mistake student entrepreneurs make is building products no one actually wants. They fall in love with their idea without validating market demand first, wasting precious time and resources on solutions that don't address real customer needs. Other key errors include overcomplicating their initial product, misunderstanding their target users, neglecting business model development, and underestimating the time commitment required alongside academic responsibilities.
+
+  utter_team_motivation:
+    - text: |
+         DO:
+         1. Acknowledge and appreciate every milestone, no matter how small and highlight individual and team contributions
+         2. Always remind the team of the project's purpose and impact and reinforce the value of their work.
+         3. Encourage skill development and knowledge sharing and offer training or workshops.
+         4. Actively listen to concerns and suggestions and empower the team to contribute to solutions.
+         DON'T:
+         1. Pretend everything is fine when it's not and avoid addressing the team's concerns.
+         2. Ignore signs of burnout or stress.
+         3. Place blame or create a culture of fear.
+         4. Sugarcoat challenges, but frame them as solvable
+
+  utter_team_size_advice:
+    - text: |
+         Small Team (2-3): Best for most student startups
+
+         Advantages:
+         1. Lightning-fast decisions (critical in early stages)
+         2. Stronger alignment (easier to maintain shared vision)
+         3. More equity per founder
+         4. Lower conflict risk
+         5. Perfect for MVPs and validation
+         6. Easier to coordinate around exam schedules
+         7. More feasible to bootstrap (ANSEJ limits may apply)
+         8. University projects often succeed with 2-3 members
+
+         Challenges:
+         1. Skill gaps may exist
+         2. Heavy workload per person
+         3. Single point of failure if someone leaves
+
+         Large Team (4-6 People): Only consider if absolutely necessary
+
+         Advantages:
+         1. Broader skill coverage
+         2. More manpower for complex projects
+         3. Built-in redundancy
+
+         Challenges:
+         1. Decision paralysis
+         2. Equity dilution
+         3. Higher conflict potential
+         4. Harder to align schedules
+
+         Why Team Size Matters, your founding team determines:
+         - Decision-making speed
+         - Skill coverage
+         - Equity distribution
+         - Long-term culture
+
+         Action Plan:
+         1. Start with minimum viable team (2-3 people)
+         2. Add members when:
+         - You've validated the idea
+         - You clearly lack specific skills
+         - You can afford equity splits
+         3. Use university resources to fill temporary gaps
+
+  utter_best_tip:
+    - text: |
+         Top tips for university founders:
+         1. Solve local problems you've experienced firsthand on your campus.
+         2. Start with small, focused solutions that address specific pain points in Algerian university life.
+         3. Build a team with complementary skills from your university network.
+         4. Leverage university resources - labs, mentors, and competitions for early support.
+         5. Connect with other Algerian student entrepreneurs to share experiences and resources
+
+  utter_underrated_growth_hack:
+    - text: |
+         There are several uncommon growth strategies that work particularly well for student startups:
+         1. Professor champions - Identify innovative professors known for supporting student initiatives who can become powerful advocates within the university system.
+         2. Timing around academic events - Align launches with major university events like science fairs and entrepreneurship weeks that happen regularly in Algerian universities.
+         3. Regional competition circuits - Participate in competitions hosted by organizations like "Injaz Algeria" or "Algeria Startup Challenge" which provide visibility across multiple universities.
+         4. Department partnerships: build relationships with academic departments relevant to your solution. Algerian universities often have hierarchical structures where departmental endorsement can open many doors.
+
+  utter_skeep_classes: 
+    - text: |
+         Regarding skipping classes for your startup:
+         DO:
+         1. Prioritize classes that directly contribute skills to your startup (entrepreneurship, relevant technical courses)
+         2. Schedule dedicated startup work time around your class schedule
+         3. Communicate with professors when big startup opportunities arise (competitions, investor meetings)
+         4. Find balance by working efficiently rather than just working more hours
+
+         DON'T:
+         1. Regularly skip classes as a habit - education is part of your competitive advantage
+         2. Miss exams or major assessments that could jeopardize your academic standing
+         3. Neglect learning opportunities that might benefit your startup long-term
+         4. Isolate yourself from the university ecosystem that could support your growth
+
+         Algerian hack: Remember: maintaining good academic standing often provides legitimacy and access to resources that can benefit your startup.
+
+  utter_validate_vs_perfectit:
+    - text: |
+         When it comes to bringing an idea to life, the balance between perfection and practicality is crucial, here's a breakdown:
+         DO:
+         1. Validate your idea with real users as early as possible
+         2. Focus on solving one core problem exceptionally well
+         3. Iterate based on user feedback
+         4. Launch a minimum viable product (MVP) quickly
+         5. Measure real user engagement
+
+         DON'T:
+         1. Wait until every feature is perfect
+         2. Assume you know what users want without testing
+         3. Spend months building without feedback
+         4. Over-engineer the first version
+         5. Delay launch due to perfectionism
+
+  utter_ask_eligibility_criteria:
+    - text: |
+        Eligibility depends on the funding program you're applying to. Here's a general overview:
+ 
+        🔹 **ANSEJ (now ANADE)**:
+        - Age: 19–40 years old
+        - Must be Algerian and unemployed
+        - Must be registered with ANEM (national employment agency)
+        - Must have a clear, feasible business idea
+ 
+        🔹 **CNAC**:
+        - Age: 30–55 years old
+        - Must be unemployed and registered at ANEM
+        - Cannot be affiliated with CNAS or CASNOS
+        - Must have a realistic and viable project
+ 
+        🧾 In most cases, you'll also need:
+        - A business plan
+        - Identification documents
+        - Financial estimate (quotes/devis)
+        - Proof of residence
+ 
+        Let me know your profile and goals, and I can guide you to the right program!
+
+  utter_ask_application_process:
+    - text: |
+        The application process varies by funding source, but it generally includes these steps:
+ 
+        1. **Prepare your documents**: Business plan, quotes for needed materials (devis), a copy of your ID, and proof of residence.
+        2. **Register with ANEM**: This is mandatory for most public programs like ANADE and CNAC.
+        3. **Submit your project**: Either through a physical office or the program's online portal.
+        4. **Pitch your idea**: You'll meet a committee to present and justify your project.
+        5. **Receive feedback or approval**: If approved, you'll sign a financing contract.
+        6. **Bank procedures**: You'll be directed to a bank that handles your funding, followed by project launch.
+ 
+        🔍 Tip: Be prepared to defend your project logically and show that it's financially viable.
+
+  utter_ask_deadlines:
+    - text: |
+        🕐 Deadlines depend on the program or opportunity:
+ 
+        🔹 **ANADE and CNAC**: These are open all year long — you can submit your application anytime. However, approvals may take several weeks or months depending on the region.
+ 
+        🔹 **University incubators & competitions**: These often have strict deadlines and yearly calls for projects.
+ 
+        🔹 **Private or international grants**: Each one has its own deadline and terms, usually published in advance on their websites.
+ 
+        ✅ Pro tip: If you're serious about a project, prepare your documents early and ask your local ANADE/CNAC office about upcoming opportunities.
+
+  utter_ask_funding_programs:
+    - text: |
+        There are several funding options available in Algeria, especially for young people and students:
+ 
+        🔹 **ANADE (ex-ANSEJ)**: Public program for Algerians aged 19–40 to start micro-projects, even without capital.
+ 
+        🔹 **CNAC**: For unemployed individuals aged 30–55. Offers startup loans and tax exemptions.
+ 
+        🔹 **University incubators**: Many universities now support students with business ideas through incubators that offer training, mentoring, and even financial help.
+ 
+        🔹 **ANGEM**: Microcredit program, especially for women and people in remote areas.
+ 
+        🔹 **Freelancing or digital entrepreneurship**: Platforms like Upwork, Fiverr, or even local networks can help fund tech-based projects or freelancing careers.
+ 
+        🔹 **Competitions and hackathons**: Some local organizations and embassies offer funding through entrepreneurship contests.
+ 
+        If you're a student, I can help you identify real funding channels that suit your profile — just ask!
+
+  utter_what_is_cnac:
+    - text: |
+        CNAC (National Unemployment Insurance Fund) is a government program that provides funding for unemployed individuals aged 30 to 55 who want to launch their own businesses.
+ 
+        🧾 It includes:
+        - Partial funding or loan guarantees
+        - Tax and social contribution exemptions for up to 3 years
+        - Training and mentorship support
+ 
+        The goal is to reduce unemployment by encouraging entrepreneurship.
+
+  utter_how_to_join_cnac:
+    - text: |
+        To join CNAC and apply for funding, follow these steps:
+ 
+        ✅ Eligibility:
+        - Be Algerian and aged 30–55
+        - Be unemployed and registered with ANEM
+        - Have a feasible business idea
+ 
+        📄 Required documents:
+        - Business plan
+        - Price estimates from suppliers (devis)
+        - ID and proof of residence
+        - ANEM registration certificate
+ 
+        Once your project is approved, you'll be directed to a bank for funding and project launch.
+
+  utter_what_is_ansej:
+    - text: |
+        ANSEJ, now known as ANADE, is a national agency that helps young Algerians aged 19 to 40 start their own small businesses.
+ 
+        💡 It was created to fight youth unemployment by providing:
+        - Funding (with or without personal contribution)
+        - Exemptions from taxes and social contributions for up to 3 years
+        - Assistance in managing and launching the business
+ 
+        It supports a wide range of sectors — from agriculture to tech and services.
+
+  utter_how_to_join_ansej:
+    - text: |
+        To benefit from ANADE (formerly ANSEJ):
+ 
+        ✅ You must:
+        - Be Algerian, aged 19–40
+        - Be unemployed and registered with ANEM
+        - Have a clear, feasible business idea
+        - Be willing to manage the project full time
+ 
+        📄 Required documents:
+        - ID and proof of residence
+        - ANEM registration
+        - Business plan and price quotations
+ 
+        Once submitted, your project will be evaluated, and if approved, financing will be arranged through a bank.
+
+  utter_who_can_apply_cnac:
+    - text: |
+        You can apply to CNAC if:
+ 
+        ✅ You are:
+        - An Algerian citizen aged 30 to 55
+        - Currently unemployed
+        - Registered as a job seeker with ANEM
+        - Not affiliated with CNAS or CASNOS (i.e., not already working or running a business)
+ 
+        You also need a realistic business idea that you're ready to defend and manage.
+
+  utter_who_can_apply_ansej:
+    - text: |
+        You are eligible for ANADE (formerly ANSEJ) if:
+ 
+        ✅ You are:
+        - An Algerian citizen aged 19 to 40
+        - Unemployed and registered with ANEM
+        - Motivated to launch and personally manage your project
+        - Able to present a feasible business plan
+ 
+        This program is ideal for young people with ambition but limited capital.
+
+  utter_how_to_find_funding_algeria:
+    - text: |
+        Finding funding in Algeria, especially as a student or young entrepreneur, is possible even without capital. Here are some steps you can follow:
+ 
+        1️⃣ **Follow Algerian platforms & organizations**: Subscribe to pages like ANADE (ex-ANSEJ), CNAC, ANDI, or the Ministry of Startups. Also check Facebook groups like "Start-up Algérie", "Opportunités en Algérie" or "Jeunes entrepreneurs DZ".
+ 
+        2️⃣ **Apply to international programs that accept Algerians**: Platforms like YALI, African Union, and local embassies often launch calls for entrepreneurship projects or training + funding.
+ 
+        3️⃣ **Collaborate with university clubs**: Many clubs (GDG, Shellmates, ESI clubs, etc.) work with real sponsors and help young students apply for international funding (hackathons, innovation calls, etc.).
+ 
+        4️⃣ **Prepare a strong CV and pitch**: Even if you don't have a project yet, having a strong personal profile helps you get selected when opportunities open.
+
+  utter_how_to_fund_project_as_student:
+    - text: |
+        Funding your project as a student in Algeria is possible! Here are some real ways:
+ 
+        🎓 **University & student clubs**: Many engineering/computer science clubs have partnerships with companies or participate in competitions that offer funding for selected teams.
+ 
+        📢 **Hackathons & Innovation Challenges**: Look for challenges hosted by Ooredoo, Djezzy, or state institutions (ex: Algiers Innovation Challenge, ATIC, etc.). Winners get cash + mentorship.
+ 
+        🌍 **International programs**: Apply to initiatives like:
+        - **Enactus Algeria**
+        - **Hult Prize Algeria**
+        - **StartUp Africa Roadshow**
+        - **Algerian Startup Conference (ASC)**
+ 
+        🧠 **Tip**: Build a strong CV, team up with others, and start small — even bootstrapping can lead you to big opportunities!
+
+  utter_platforms_for_funding_opportunities:
+    - text: |
+        Here are great places to discover funding opportunities in Algeria:
+ 
+        🌐 **Websites/Platforms**:
+        - [https://startup.dz](https://startup.dz) (Startup Act, incentives, grants)
+        - [https://www.anda.dz](https://www.anda.dz) (CNAC and entrepreneurship programs)
+        - [https://www.ande.dz](https://www.ande.dz) (ex-ANSEJ)
+ 
+        💬 **Facebook groups/pages**:
+        - Opportunités pour les jeunes algériens
+        - Funding opportunities in Algeria
+        - Jeunes entrepreneurs DZ
+ 
+        🧠 **Smart tip**: Turn on post notifications on these pages or use Google Alerts for "appel à projets Algérie"!
+
+  utter_can_i_get_funding_with_no_capital:
+    - text: |
+        Absolutely YES! Many programs are designed to help people with **zero capital**. Here's what you can do in Algeria:
+ 
+        🔍 **Pre-incubation programs**:
+        - Enactus
+        - Hult Prize
+        - Campus Incubators (e.g. USTHB Innovation Hub)
+ 
+        💼 **Funding for ideas, not businesses**:
+        Programs like ANADE (ex-ANSEJ) sometimes accept project ideas from youth — especially if it's innovative or tech-based.
+ 
+        🌱 **Start small**: Offer your service/product to people you know, document everything, and apply to:
+        - Startup competitions
+        - Pitching events
+        - NGO programs with microfunding (e.g. UNICEF, UNDP local calls)
+
+  utter_real_life_funding_examples_algeria:
+    - text: |
+        Yes! Here are real Algerian examples:
+ 
+        ✅ **Enactus USTHB 2023**: A student team won funding for their eco-friendly water purification startup, after progressing from local club to national competition.
+ 
+        ✅ **Hult Prize Algeria Finalist 2022**: A solo participant with a mental health app got international mentorship and joined a Berlin startup accelerator.
+ 
+        ✅ **USTHB x GDG Hackathon**: Multiple students received up to 200k DA from sponsor companies for their winning ideas.
+ 
+        These examples prove you don't need to be rich or famous — just consistent, prepared, and engaged in your community!
+
+  utter_mistakes_to_avoid_when_applying:
+    - text: |
+        Great question! Avoiding these mistakes will increase your chances of success in Algerian funding programs:
+ 
+        🚫 **1. Vague project idea**: Funders want clarity. Make sure your project solves a real problem and is well-defined (goal, audience, timeline).
+ 
+        ❌ **2. No financial plan**: Even a basic cost breakdown is better than nothing. CNAC and ANADE expect you to know your expenses.
+ 
+        🛑 **3. Copy-pasted pitch**: Generic applications = instant rejection. Tailor your application to the program's goal.
+ 
+        😶‍🌫️ **4. Overly ambitious promises**: Don't say you'll "revolutionize the market" with no data. Be realistic and back up your claims.
+ 
+        🧠 **5. Weak personal story**: Your background matters. Highlight your motivation, resilience, or why YOU are the right person to lead this project.
+ 
+        ✔️ **Pro tip**: Always get someone to review your application — a mentor, a teacher, or even me 😏
+ 
+        You've got this!
+
+  utter_ask_steps_to_create_startup:
+       - text: "To start a startup in Algeria, you must choose a legal structure, prepare your legal documents (statutes, ID, address proof), register with the CNRC, obtain your NIF and NIS, and declare your business to the tax authorities."
+
+  utter_ask_where_to_register:
+      - text: "You can register your startup at the CNRC (Centre National du Registre du Commerce), either online via https://sidjilcom.cnrc.dz or at one of their offices."
+
+  utter_ask_get_commercial_registration:
+    - text: "To obtain a commercial registration (Registre de commerce), you must submit your legal documents to the CNRC and complete the registration process either online or in person."
+
+  utter_ask_required_documents:
+    - text: "The required documents include your ID, proof of address, draft of the company's statutes, proof of capital deposit, and application forms from the CNRC."
+  
+  utter_ask_legal_structure_difference:
+    - text: "A SARL (LLC) has multiple shareholders and limited liability, while a sole proprietorship is owned by one person who bears full responsibility."
+  
+  utter_ask_need_to_publish_statutes:
+    - text: "Yes, publishing your statutes in the BOAL (Bulletin Officiel des Annonces Légales) is a legal requirement after registration."
+  
+  utter_ask_content_of_statutes:
+    - text: "The statutes must include the company name, objectives, address, capital, shareholding structure, and management rules."
+  
+  utter_ask_tax_obligations:
+    - text: "Startups must register for taxes, submit periodic declarations, and pay applicable taxes such as VAT and corporate tax."
+
+  utter_ask_get_nif:
+    - text: "You can obtain your NIF (Numéro d'Identification Fiscale) from the local tax office after your company is registered with the CNRC."
+ 
+  utter_ask_register_with_tax_authority:
+    - text: "Yes, all businesses must register with the tax authority (Direction des Impôts) to receive their NIF and tax obligations."
+  
+  utter_ask_use_home_as_headquarters:
+    - text: "Yes, you can use your home address as your company's headquarters if it is allowed by local regulations and you provide proof of residence."
+  
+  utter_ask_domiciliation_options:
+    - text: "You can domicile your startup at your home, in a coworking space, incubator, or business center authorized for domiciliation."
+  
+  utter_ask_incubator_domiciliation:
+    - text: "Yes, several incubators and coworking spaces in Algeria offer domiciliation services for startups and new businesses."
+  
+  utter_ask_solo_startup:
+    - text: "Yes, you can create a startup alone. You may choose an EURL (single-person LLC) or register as a sole proprietor."
+  
+  utter_ask_partners_roles:
+    - text: "Partners in an LLC contribute capital, share profits, and participate in major decisions. Their responsibilities are defined in the statutes."
+  
+  utter_ask_required_capital:
+    - text: "The minimum capital for a SARL in Algeria is 100,000 DZD. For other types, it may vary or have no strict requirement."
+  
+  utter_ask_obtain_startup_label:
+    - text: "To obtain the 'Startup' label, apply through the Algerian Startup Initiative platform and meet criteria like innovation, scalability, and being under 5 years old."
+  
+  utter_ask_startup_label_advantages:
+    - text: "The Startup label grants tax exemptions, customs duty exemptions, and access to dedicated startup funds and support programs."
+  
+  utter_ask_funding_and_support:
+    - text: "You can apply for grants from ANSEJ, the National Startup Fund, and other local or international entrepreneurship programs."
+  
+  utter_ask_find_funding:
+    - text: "Startup funding sources include government programs, venture capital, angel investors, competitions, and bank loans."
+  
+  utter_ask_official_guide:
+    - text: "Yes, you can find official startup guides on the CNRC website or the Ministry of Knowledge Economy and Startups."
+  
+  utter_ask_online_platform:
+    - text: "Yes, you can register your business online at https://sidjilcom.cnrc.dz which offers electronic registration and document upload."
+  
+  utter_ask_duration_to_start:
+    - text: "The process usually takes 5 to 15 working days, depending on the completeness of your documents and your legal form."
+  
+  utter_ask_startup_mistakes:
+    - text: "Common mistakes include skipping market research, choosing the wrong legal structure, or not fulfilling legal obligations."
+
+  utter_ask_startup_costs:
+    - text: "Startup costs include registration fees, notary/legal fees, initial capital, publication costs, and optional domiciliation services."
+  
+  utter_ask_legal_procedure:
+    - text: "### **How to Start a Startup in Algeria: A Step-by-Step Guide**
+ 
+       1. **Choose a Business Name**  
+         Submit up to four name options to the National Center of the Commercial Register (CNRC). They'll confirm if the name you want is available.
+ 
+       2. **Register a Business Address**  
+         You must provide proof of your business location. This can be:
+         - A property deed for a commercial space  
+         - A notarized commercial lease  
+         - Proof of owning a business space  
+         - A domiciliation contract with a specialized company  
+ 
+       3. **Write Your Company's Bylaws**  
+         Work with a notary to write your company's statutes (bylaws). You'll need:
+         - Birth certificates of all partners  
+         - Certified copies of national ID cards  
+         - Lease or ownership documents for your office  
+         - Proof of capital deposit (at least 20% for SARL companies)  
+ 
+       4. **Publish the Company Formation**  
+         You must publish your company's creation in:
+         - The Official Bulletin of Legal Announcements (BOAL)  
+         - A national newspaper  
+         A notary can help with this step, or you can do it yourself through the CNRC.  
+ 
+       5. **Register with the CNRC**  
+         Apply for your official Business Registration (Registre du Commerce). You'll need:
+         - A completed application form  
+         - The company's statutes  
+         - Proof of publication  
+         - Proof of your business address  
+         - Receipts for registration fees and stamp duty  
+ 
+       6. **Get Your Tax Identification Number (NIF)**  
+         After registering, request your NIF from the local tax office.  
+ 
+       7. **Register for Social Security**  
+         - Employees must be registered with CNAS (National Social Insurance Fund)  
+         - Non-salaried workers must register with CASNOS (Social Security for the Self-Employed)  
+         This must be done within 10 days of starting activity.  
+ 
+       8. **Apply for the 'Startup' Label**  
+         To access special benefits for startups, apply for the official 'Startup' label.  
+         Main criteria:
+         - The business is under 8 years old  
+         - It has an innovative business model  
+         - Annual revenue is under 500 million DZD  
+         - At least 50% of the capital is owned by individuals or approved investment funds  
+         - Fewer than 250 employees  
+         Apply online via the official Algerian startup platform."
+  
+  utter_ask_documents:
+    - text: "To legally register a startup in Algeria, you'll need the following documents:
+       1. Identity documents of all founders/partners
+       2. Proof of address for company headquarters
+       3. Draft of company statutes (articles of association)
+       4. Bank certificate proving capital deposit
+       5. Completed application forms from CNRC
+       6. Proof of publication in the Official Bulletin and a newspaper
+       7. Professional qualifications/diplomas (for regulated activities)
+       8. Property title or rental agreement for business premises"
+  
+  utter_ask_legal_status:
+    - text: "A startup in Algeria can take various legal forms depending on the number of founders and the intended structure. The most common legal statuses are:
+
+      - EURL (Entreprise Unipersonnelle à Responsabilité Limitée) for solo founders
+      - SARL (Société à Responsabilité Limitée) for two or more partners
+      - SNC (Société en Nom Collectif) for partnerships with joint liability
+      - SPA (Société Par Actions) for larger ventures with shareholders
+      - Auto-entrepreneur status for certain types of small businesses
+      
+       Startups can also apply for the official 'Startup' label from the Ministry of Knowledge Economy to benefit from special advantages."
+  
+  utter_ask_tax:
+    - text: "Yes, registering your business with the tax authorities (Direction des Impôts) is mandatory in Algeria.
+       This registration is necessary to:
+
+       - Obtain your NIF (Numéro d'Identification Fiscale)
+       - Fulfill tax obligations such as VAT declarations, corporate tax, and other contributions
+       - Register with social security authorities (CNAS/CASNOS)
+      
+       You must complete this step shortly after your commercial registration at the CNRC."
+
+  utter_ask_home_office_of_startup:
+    - text: "Yes, it is legally possible to use your residential address as the headquarters (siège social) of your company, especially during the early stages.
+       However, you must:
+      
+       - Have proof of residence (e.g., utility bill, rental contract)
+       - Ensure that local regulations (urban planning or landlord conditions) do not restrict business activity at that address
+       - Check that your business activities are compatible with residential use
+      
+       Some professional activities may require commercial premises due to safety or regulatory requirements."
+
+  utter_ask_startup_alone:
+    - text: "Yes, you can absolutely start a startup on your own in Algeria.
+      
+       The most suitable legal structure for solo entrepreneurs is the EURL (a single-member LLC), which limits personal liability and is officially recognized.
+      
+       You can also register as an auto-entrepreneur (self-employed) if your business activity fits within the allowed categories for this status.
+      
+       Starting alone doesn't prevent you from seeking partnerships or expanding your team later as your business grows."
+  
+
 
 session_config:
   session_expiration_time: 60
