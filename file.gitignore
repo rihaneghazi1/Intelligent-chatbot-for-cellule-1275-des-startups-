@@ -1,8 +1,0 @@
-.rasa/cache/
-models/
-__pycache__/
-*.db
-*.pyc
-.DS_Store
-*.tar.gz
-.env
