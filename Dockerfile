@@ -1,6 +1,6 @@
 FROM rasa/rasa:3.6.21
 
-# Optional: Copy your Rasa project files into the container
+# Copy your Rasa project files into the container
 COPY . /app
 WORKDIR /app
 
