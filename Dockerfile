@@ -12,4 +12,4 @@ RUN mkdir -p /app/models
 
 # Start Rasa server with REST API and CORS enabled
 # First train the model, then start the server
-CMD rasa train && rasa run --enable-api --cors "*" --port $PORT
+CMD ["sh", "-c", "rasa run --enable-api --cors '*' --port ${PORT:-5005}"]
