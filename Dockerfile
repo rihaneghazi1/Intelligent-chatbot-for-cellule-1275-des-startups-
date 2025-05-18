@@ -4,8 +4,12 @@ FROM rasa/rasa:3.6.21
 COPY . /app
 WORKDIR /app
 
-# Train the model
-RUN rasa train
+# Create the models directory with proper permissions
+RUN mkdir -p /app/models
+
+# Skip training during build (we'll train at runtime)
+# RUN rasa train  <- Remove or comment out this line
 
 # Start Rasa server with REST API and CORS enabled
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "5005"]
+# First train the model, then start the server
+CMD rasa train && rasa run --enable-api --cors "*" --port $PORT
