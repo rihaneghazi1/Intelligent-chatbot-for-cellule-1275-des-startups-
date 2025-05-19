@@ -4,7 +4,7 @@ WORKDIR /app
 COPY . /app
 
 USER root
-RUN rasa train
+#RUN rasa train
 
 EXPOSE 5005
 
