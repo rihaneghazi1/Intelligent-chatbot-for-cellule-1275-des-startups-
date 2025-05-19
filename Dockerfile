@@ -1,14 +1,11 @@
 FROM rasa/rasa:3.6.21
 
-ENV SQLALCHEMY_WARN_20=0
-ENV SQLALCHEMY_SILENCE_UBER_WARNING=1
-ENV PYTHONWARNINGS="ignore::DeprecationWarning"
-
-COPY . /app
 WORKDIR /app
+COPY . /app
 
-RUN mkdir -p /app/models && chmod -R 755 /app/models
+USER root
+RUN rasa train
 
-RUN ls -lah /app/models  # for debug
+EXPOSE 5005
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--model", "models/model.tar.gz", "--port", "${PORT:-5005}"]
+CMD ["run", "--enable-api", "--cors", "*", "--debug"]
