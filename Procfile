@@ -1,1 +1,1 @@
-web: python -m rasa run --enable-api --cors "*" --port $PORT
+web: rasa train && rasa run --enable-api --port $PORT

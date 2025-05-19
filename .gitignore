@@ -22,4 +22,3 @@ var/
 .venv
 venv/
 ENV/
-models/
