@@ -209,6 +209,9 @@ nlu:
 
 - intent: can_i_apply
   examples: |
+    - how can i start a startup?
+    - how do i launch a startup?
+    - comment dois je creer une startup?
     - Can I apply?
     - Am I eligible to apply?
     - Can I submit my idea?
