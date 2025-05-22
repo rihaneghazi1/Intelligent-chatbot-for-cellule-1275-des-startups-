@@ -1,11 +1,24 @@
-FROM rasa/rasa:3.6.21
 
-WORKDIR /app
-COPY . /app
+FROM python:3.9.21
 
 USER root
-#RUN rasa train
 
-EXPOSE 5005
+WORKDIR /app
 
-CMD ["run", "--enable-api", "--cors", "*", "--debug"]
+COPY . /app
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN rasa train --out models --fixed-model-name model --verbose --debug 
+
+# RUN chmod -R 755 /app/models
+
+EXPOSE 8000
+# EXPOSE 9000
+
+
+# RUN rasa run --enable-api --port 8000 --model models/model.tar.gz --cors "*" 
+
+CMD ["rasa", "run", "--enable-api", "--port", "8000", "--model", "models/model.tar.gz", "--cors", "*"]
+
+# # CMD ["run", "--enable-api", "--port", "8000", "--cors", "*", "--debug"
